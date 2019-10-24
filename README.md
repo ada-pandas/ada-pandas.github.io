@@ -1,4 +1,4 @@
-# Title
+# Title: TO DO
 
 # Abstract
 When we breathe polluted air pollutants get into our lungs; they can enter the bloodstream and be carried to our internal organs such as the brain. This can cause severe health problems such as asthma, cardiovascular diseases and even cancer and reduces the quality and number of years of life.
@@ -13,13 +13,13 @@ The link between pollutants levels and different external factors (number of car
 Cluster cities with different pollution levels ~ analyze what are their common aspects.
 
 # Dataset
-http://discomap.eea.europa.eu/map/fme/AirQualityExport.htm
 
-The main dataset lists AirQuality indexes for different European cities throughout the time (2013 - 2019). The granularisation is at the city level, approximatively 1 reading being done per day. The pollutants included are CO, NO, NO2, PB, PM10, PM2.5, SO2, THC ...
+
+The main dataset lists [AirQuality indexes](http://discomap.eea.europa.eu/map/fme/AirQualityExport.htm) for different European cities throughout the time (2013 - 2019). The granularisation is at the city level, approximatively 1 reading being done per day. The pollutants included are CO, NO, NO2, PB, PM10, PM2.5, SO2, THC ...
 
 Not all cities have data for all the years and all pollutants.
 
-We are going to use one ore more extra datasets that can provide us with different insights about some characteristics of the cities (number of inhabitants, cars ...): https://www.kaggle.com/roshansharma/europe-datasets
+We are going to use one ore more extra datasets that can provide us with different insights about some characteristics of the cities (number of inhabitants, cars ...): [European Cities Dataset](https://www.kaggle.com/roshansharma/europe-datasets)
 
 # A list of internal milestones up until project milestone 2
 
