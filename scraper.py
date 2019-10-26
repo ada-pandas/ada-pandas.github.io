@@ -81,6 +81,14 @@ path = os.getcwd()
 info_time = 'Year'
 create_dir('data')
 
+print("Downloading metadata")
+try:
+    urllib.request.urlretrieve("https://ereporting.blob.core.windows.net/downloadservice/metadata.csv",
+                               'data/metadata.csv')
+    print("Finished")
+except urllib.error.HTTPError:
+    print("Failed")
+
 for country in country_codes:
     create_dir('data/' + country)
     for j in range(len(list_of_available_pollutants[country])):
