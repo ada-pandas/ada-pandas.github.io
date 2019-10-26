@@ -78,7 +78,7 @@ list_of_available_pollutants = {'AD': [10, 8, 1, 5], 'AL': [10, 8, 7, 1, 5], 'AT
 
 path = os.getcwd()
 
-info_time = 'Last7days'
+info_time = 'Year'
 create_dir('data')
 
 print("Downloading metadata")
@@ -94,13 +94,17 @@ for country in country_codes:
     for j in range(len(list_of_available_pollutants[country])):
         time.sleep(2)
         create_dir('data/' + country + "/" + pollutant_codes[list_of_available_pollutants[country][j]])
-        reqs = requests.get(
-            'https://fme.discomap.eea.europa.eu/fmedatastreaming/AirQualityDownload/AQData_Extract.fmw?CountryCode=' +
-            country + '&CityName=&Pollutant=' + str(
-                list_of_available_pollutants[country][j]) + '&Year_from=2013&Year_to=2019&Station'
-                                                            '=&Samplingpoint=&Source=All&Output=HTML'
-                                                            '&UpdateDate=&TimeCoverage=' + info_time,
-            timeout=10)
+        try:
+            reqs = requests.get(
+                'https://fme.discomap.eea.europa.eu/fmedatastreaming/AirQualityDownload/AQData_Extract.fmw?CountryCode=' +
+                country + '&CityName=&Pollutant=' + str(
+                    list_of_available_pollutants[country][j]) + '&Year_from=2013&Year_to=2019&Station'
+                                                                '=&Samplingpoint=&Source=All&Output=HTML'
+                                                                '&UpdateDate=&TimeCoverage=' + info_time,
+                timeout=10)
+        except:
+            print("Request failed")
+            continue
         html_content = reqs.content
         soup = BeautifulSoup(html_content, 'html.parser')
         csv_counter = 0
