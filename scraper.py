@@ -78,7 +78,7 @@ list_of_available_pollutants = {'AD': [10, 8, 1, 5], 'AL': [10, 8, 7, 1, 5], 'AT
 
 path = os.getcwd()
 
-info_time = 'Year'
+info_time = 'Last7days'
 create_dir('data')
 
 print("Downloading metadata")
@@ -97,7 +97,7 @@ for country in country_codes:
         reqs = requests.get(
             'https://fme.discomap.eea.europa.eu/fmedatastreaming/AirQualityDownload/AQData_Extract.fmw?CountryCode=' +
             country + '&CityName=&Pollutant=' + str(
-                list_of_available_pollutants[country][j]) + '&Year_from=2018&Year_to=2019&Station'
+                list_of_available_pollutants[country][j]) + '&Year_from=2013&Year_to=2019&Station'
                                                             '=&Samplingpoint=&Source=All&Output=HTML'
                                                             '&UpdateDate=&TimeCoverage=' + info_time,
             timeout=10)
@@ -114,5 +114,5 @@ for country in country_codes:
                 print("data/" + country + '/' + pollutant_codes[list_of_available_pollutants[country][j]] + '/' + str(
                     csv_counter) + '.csv')
                 file_wr('data/' + country + '/' + pollutant_codes[list_of_available_pollutants[country][j]] + '/', html)
-            except urllib.error.HTTPError:
+            except:
                 print("Failed")
