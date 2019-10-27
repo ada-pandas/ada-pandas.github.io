@@ -1,20 +1,21 @@
-# Title: TO DO
+# Title: How heavily polluted is the Earth’s atmosphere? Air Quality Data Analysis
 
 # Abstract
-When we breathe polluted air pollutants get into our lungs; they can enter the bloodstream and be carried to our internal organs such as the brain. This can cause severe health problems such as asthma, cardiovascular diseases and even cancer and reduces the quality and number of years of life.
+By pollution of the Earth's atmosphere, we mean bringing new, uncharacteristic physical, chemical and biological substances into the air or changing their natural concentration. But what is the danger and why is it necessary to fight it? 
+When we get oxygen by breathing in air of poor quality, pollutants enter the larynx and trachea through the nasopharynx. There, our blood takes particles of contaminated oxygen from the air and moves through the vessels and carries oxygen from the lungs to all organs. Thus, these emissions can cause severe health problems such as asthma, cardiovascular diseases and even cancer. Moreover, according to the World Health Organization, approximately 4.2 million people in the world die every year due to air pollution.
 
-Thus, we feel it is our responsability to limit and even reverse the level of pollutants. In order to achive such a thing we first need to understand what is causing them. Then we need to build proper visualisation to send our results to the general public and make an impact.
+These shocking facts confirm the relevance and importance of this problem. That is why we urgently need to limit the emission of harmful substances into the atmosphere, because the burning of coal, cement production and smelting of cast iron give us tangible benefits, but are these benefits really worth so many human lives?
+
+In order to have a clear plan, we must firstly analyze the data on historical air quality, identify the pollution level dynamics, the main causes of environmental pollution, as well as the most problematic regions or even countries. The next step is to build a proper visualisation to send our results to the general public making a real impact.
 
 # Research questions
-How do pollutants levels change throughout the year?
+How does the pollution level change over throughout the year and how did it change throughout the time period under consideration?
 
-The link between pollutants levels and different external factors (number of cars in cities, geographical position, apparitions of factories..etc)
+What is the correlation between the pollution level and different external factors (number of cars in cities, geographical position, presence of factories or thermoelectric power stations in the region, etc.)?
 
-Cluster cities with different pollution levels ~ analyze what are their common aspects.
+What are the common aspects of cities with different pollution levels (cluster analysis)?
 
 # Dataset
-
-
 The main dataset lists [AirQuality indexes](http://discomap.eea.europa.eu/map/fme/AirQualityExport.htm) for different European cities throughout the time (2013 - 2019). The granularisation is at the city level, approximatively 1 reading being done per day. The pollutants included are CO, NO, NO2, PB, PM10, PM2.5, SO2, THC ...
 
 Not all cities have data for all the years and all pollutants.
