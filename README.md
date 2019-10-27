@@ -2,7 +2,7 @@
 
 # Abstract
 By pollution of the Earth's atmosphere, we mean bringing new, uncharacteristic physical, chemical and biological substances into the air or changing their natural concentration. But what is the danger and why is it necessary to fight it? 
-When we get oxygen by breathing in air of poor quality, pollutants enter the larynx and trachea through the nasopharynx. There, our blood takes particles of contaminated oxygen from the air and moves through the vessels and carries oxygen from the lungs to all organs. Thus, these emissions can cause severe health problems such as asthma, cardiovascular diseases and even cancer. Moreover, according to the World Health Organization, approximately 4.2 million people in the world die every year due to air pollution.
+When we get oxygen by breathing in air of poor quality, pollutants enter the larynx and trachea through the nasopharynx. There, our blood takes particles of contaminated oxygen from the air and moves through the vessels and carries oxygen from the lungs to all organs. Thus, these emissions can cause severe health problems such as asthma, cardiovascular diseases and cancer, leading to serious health problems or even death. Therefore, the life expectancy of the population living in the contaminated regions is reduced. Moreover, according to the World Health Organization, approximately 4.2 million people in the world die every year due to air pollution.
 
 These shocking facts confirm the relevance and importance of this problem. That is why we urgently need to limit the emission of harmful substances into the atmosphere, because the burning of coal, cement production and smelting of cast iron give us tangible benefits, but are these benefits really worth so many human lives?
 
