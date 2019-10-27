@@ -32,4 +32,4 @@ We are going to use one ore more extra datasets that can provide us with differe
 6. Combine everything into a report (with conclusion ~ what we can do do limit the effects of pollutants & provide a better future)
 
 # Questions for TAa
-Add here some questions you have for us, in general or project-specific.
+1. We have a .py script that scrapes data from the web (the total size is about 0.3-0.4 TB). Can we run it on the cluster?
