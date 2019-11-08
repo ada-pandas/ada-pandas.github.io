@@ -12,12 +12,13 @@ import os
 import requests
 from bs4 import BeautifulSoup
 import urllib.request
+import traceback
 
 timeout = 10
 socket.setdefaulttimeout(timeout)
 
 csv_counter = 0
-
+file_failed = open("failed.txt", "w+")
 
 def create_dir(dir_name):
     if not os.path.exists(dir_name):
@@ -40,6 +41,18 @@ def file_wr(filename, infos):
 def file_read(filename):
     with urllib.request.urlopen(filename) as response:
         return response
+
+
+def retry_failed(list_of_failed_downloads):
+    for item in list_of_failed_downloads:
+        try:
+            print("Retrying download " + item[0])
+            urllib.request.urlretrieve(item[0], item[1] + ".csv\n")
+            print("Finished")
+        except Exception:
+            traceback.print_exc()
+            file_failed.write(item[0] + ' ' + item[1])
+            print("Failed")
 
 
 country_codes = ['AD', 'AL', 'AT', 'BA', 'BE', 'BG', 'CH', 'CY', 'CZ', 'DE', 'DK', 'EE', 'ES', 'FI', 'FR', 'GB', 'GI',
@@ -76,8 +89,6 @@ list_of_available_pollutants = {'AD': [10, 8, 1, 5], 'AL': [10, 8, 7, 1, 5], 'AT
                                 'SK': [10, 8, 1, 7, 5, 6001], 'TR': [10, 8, 1, 7, 5, 6001],
                                 'XK': [10, 8, 1, 7, 5, 6001]}
 
-path = os.getcwd()
-
 info_time = 'Year'
 create_dir('data')
 
@@ -89,9 +100,11 @@ try:
 except urllib.error.HTTPError:
     print("Failed")
 
+
 for country in country_codes:
     create_dir('data/' + country)
     for j in range(len(list_of_available_pollutants[country])):
+        failed_downloads = []
         time.sleep(2)
         create_dir('data/' + country + "/" + pollutant_codes[list_of_available_pollutants[country][j]])
         try:
@@ -108,15 +121,21 @@ for country in country_codes:
         html_content = reqs.content
         soup = BeautifulSoup(html_content, 'html.parser')
         csv_counter = 0
+        path = "data/" + country + '/' + pollutant_codes[list_of_available_pollutants[country][j]] + '/'
         for link in soup.find_all('a'):
             linkf = link.get('href')
             print("Downloading", linkf)
             try:
                 req = urllib.request.Request(linkf, headers={
-                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'})
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) '
+                                  'Chrome/47.0.2526.106 Safari/537.36'})
                 html = urllib.request.urlopen(req).read()
-                print("data/" + country + '/' + pollutant_codes[list_of_available_pollutants[country][j]] + '/' + str(
-                    csv_counter) + '.csv')
-                file_wr('data/' + country + '/' + pollutant_codes[list_of_available_pollutants[country][j]] + '/', html)
+                print(path + str(csv_counter) + '.csv')
+                file_wr(path, html)
             except:
+                failed_downloads.append((linkf, path + str(csv_counter)))
                 print("Failed")
+
+        retry_failed(failed_downloads)
+
+file_failed.close()
