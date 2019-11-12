@@ -101,7 +101,7 @@ except urllib.error.HTTPError:
     print("Failed")
 
 
-for country in country_codes:
+for country in country_codes[:1]:
     create_dir('data/' + country)
     for j in range(len(list_of_available_pollutants[country])):
         failed_downloads = []
