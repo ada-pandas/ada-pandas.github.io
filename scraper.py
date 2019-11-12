@@ -47,11 +47,11 @@ def retry_failed(list_of_failed_downloads):
     for item in list_of_failed_downloads:
         try:
             print("Retrying download " + item[0])
-            urllib.request.urlretrieve(item[0], item[1] + ".csv\n")
+            urllib.request.urlretrieve(item[0], item[1] + ".csv")
             print("Finished")
         except Exception:
             traceback.print_exc()
-            file_failed.write(item[0] + ' ' + item[1])
+            file_failed.write(item[0] + ' ' + item[1] + "\n")
             print("Failed")
 
 
