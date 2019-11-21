@@ -51,11 +51,8 @@ def retry_failed(list_of_failed_downloads):
             print("Finished")
         except Exception:
             traceback.print_exc()
-<<<<<<< HEAD
             file_failed.write(item[0] + ' ' + item[1] + ".csv\n")
-=======
             file_failed.write(item[0] + ' ' + item[1] + "\n")
->>>>>>> 6e209c69602111117a0faab20eef5d477611b24e
             print("Failed")
 
 
@@ -107,9 +104,7 @@ except urllib.error.HTTPError:
 
 <<<<<<< HEAD
 for country in country_codes[4:20]:
-=======
 for country in country_codes[:1]:
->>>>>>> 6e209c69602111117a0faab20eef5d477611b24e
     create_dir('data/' + country)
     for j in range(len(list_of_available_pollutants[country])):
         failed_downloads = []
