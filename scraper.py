@@ -47,11 +47,11 @@ def retry_failed(list_of_failed_downloads):
     for item in list_of_failed_downloads:
         try:
             print("Retrying download " + item[0])
-            urllib.request.urlretrieve(item[0], item[1] + ".csv\n")
+            urllib.request.urlretrieve(item[0], item[1] + ".csv")
             print("Finished")
         except Exception:
             traceback.print_exc()
-            file_failed.write(item[0] + ' ' + item[1])
+            file_failed.write(item[0] + ' ' + item[1] + ".csv\n")
             print("Failed")
 
 
@@ -101,7 +101,7 @@ except urllib.error.HTTPError:
     print("Failed")
 
 
-for country in country_codes:
+for country in country_codes[4:20]:
     create_dir('data/' + country)
     for j in range(len(list_of_available_pollutants[country])):
         failed_downloads = []
