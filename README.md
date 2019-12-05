@@ -50,11 +50,11 @@ In terms of analysis the first action point that was to focus only on a specific
 
 We looked at the histogram of pollutants value and analyze if the most found values are within healthy parameters. 
 
-Then we took different time intervals and see how pollutants vary through time (24 hrs period, a few days, a few years). During this investigation we found some trends like the O3 levels increasing during the summer. We validated this assumption by searching online for possible reasons and summer wildfire is the biggest cause of such an increase.
+Then we took different time intervals and see how pollutants vary through time (24 hrs period, a few days, a few years). During this investigation we found some trends like the CO levels increasing during the summer. We validated this assumption by searching online for possible reasons and summer wildfire is the biggest cause of such an increase.
 
 **What we want to focus on for Milestone 3 and presentation**
  
- 1. We have decided to dig deeper into O3 increased levels during the summer, thus we want to cross-reference the periods with elevated CO3 values with fire events, also load data from different countries that are closer to the sources of these fire and see if we can correlate a bigger increase in those areas (as they are closed to the source of the fires)
+ 1. We have decided to dig deeper into CO increased levels during the summer, thus we want to cross-reference the periods with elevated CO values with fire events, also load data from different countries that are closer to the sources of these fire and see if we can correlate a bigger increase in those areas (as they are closed to the source of the fires)
 
  2. Until now we mainly focused on the time variation, we are going to start and load data from different places and analyze the geographical aspects that cause pollutants to stick to certain levels.
 
