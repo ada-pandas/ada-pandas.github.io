@@ -19,7 +19,7 @@
                 class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#pollutantsDescriptionTitle">pollutants</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#services">x</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#CHAnalysys">SWITZERLAND</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#portfolio">y</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#contact">z</a></li>
                 </ul>
@@ -96,7 +96,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col"><span class="text-center">At first, we are going to focus only on Switzerland and explore different pollutants variation throughout time (both short term and long term).</span></div>
+                <div class="col"><span class="text-center">At first, we are going to focus only on Switzerland and explore different pollutants levels distributions to see predominantly how is the environment we live in.</span></div>
             </div>
             <div class="row">
                 <div class="col">
@@ -109,7 +109,7 @@
             <div class="row">
                 <div class="col">
                     <div role="tablist" id="accordion-1">
-                        <div class="card">
+                        <div class="card" id="ch-pm10">
                             <div class="card-header" role="tab">
                                 <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="true" aria-controls="accordion-1 .item-1" href="div#accordion-1 .item-1">PM10</a></h5>
                             </div>
@@ -120,54 +120,44 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card" id="ch-co">
                             <div class="card-header" role="tab">
                                 <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-2" href="div#accordion-1 .item-2">CO</a></h5>
                             </div>
                             <div class="collapse item-2" role="tabpanel" data-parent="#accordion-1">
-                                <div class="card-body">
-                                    <p class="lead card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                                </div>
+                                <div class="card-body"><p class="card-text">The natural concentration of carbon monoxide in air is around 0.2 parts per million (ppm), this amount is not harmful to humans and the presence of this value is strongly reflected in the histogram. Even levels of 0.5 ppm represent the maximum allowable concentration for continuous exposure for healthy adults in any eight-hour period. Only from 2.0 ppm levels effects like slight headache, fatigue, dizziness, and nausea can appear after two to three hours of continuous exposure.</p></div>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card" id="ch-no2">
                             <div class="card-header" role="tab">
                                 <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-3" href="div#accordion-1 .item-3">NO2</a></h5>
                             </div>
                             <div class="collapse item-3" role="tabpanel" data-parent="#accordion-1">
-                                <div class="card-body">
-                                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                                </div>
+                                <div class="card-body"><p class="card-text">The NO2 levels are exceptionally good as the whole distribution of values is framed into the lowest air pollution category.</p></div>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card" id="ch-o3">
                             <div class="card-header" role="tab">
                                 <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-4" href="div#accordion-1 .item-4">O3</a></h5>
                             </div>
                             <div class="collapse item-4" role="tabpanel" data-parent="#accordion-1">
-                                <div class="card-body">
-                                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                                </div>
+                                <div class="card-body"><p class="card-text">The distribution peak is at 60 which is situated towards the superior range of <b>low pollution</b> levels. The majority of the levels are situated in the range of 0-100 which is still considered to be healthy, only exceptionally the values will spike to <b>moderate pollution</b> levels.  </p></div>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card" id="ch-so2">
                             <div class="card-header" role="tab">
                                 <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-5" href="div#accordion-1 .item-5">SO2</a></h5>
                             </div>
                             <div class="collapse item-5" role="tabpanel" data-parent="#accordion-1">
-                                <div class="card-body">
-                                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                                </div>
+                                <div class="card-body"><p class="card-text">We had to double-check for the values to be in the same scale as the <it>air pollution banding</it>. Indeed, Switzerland isn't affected by this pollutant.</p></div>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card" id="ch-pm25">
                             <div class="card-header" role="tab">
                                 <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-6" href="div#accordion-1 .item-6">PM2.5</a></h5>
                             </div>
                             <div class="collapse item-6" role="tabpanel" data-parent="#accordion-1">
-                                <div class="card-body">
-                                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                                </div>
+                                <div class="card-body"><p class="card-text">Even though the measurements for this pollutant are sparser than the others we can still see the histogram depict the distribution to being between the lower indexes of <b>air pollution</b> (higher indexes are worse).</p></div>
                             </div>
                         </div>
                     </div>
@@ -186,17 +176,15 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <p style="color: rgb(255,255,255);background-color: rgb(239,109,81);">Let's first only take a look at what happens during 24 hrs (random day chosen to be 2013-01-15). Can we see some patterns?</p>
-                    <p style="color: rgb(255,255,255);">PM10 value is monotonically increasing because of a lower densities in values (we only have ~1 or 2 measurements per day).</p>
-                    <p style="color: rgb(249,249,249);">CO values have an up skipe between 6 and 9 am and a low speak a little bit after 9 pm</p>
-                    <p style="color: rgb(255,255,255);">Paragraph</p>
-                    <figure class="figure"><img class="img-fluid figure-img" src="assets/img/24hrs-ch.png">
-                        <figcaption class="figure-caption">Caption</figcaption>
-                    </figure>
+                    <p style="color: rgb(255,255,255);background-color: rgb(239,109,81);">Let's first only take a look at what happens during 24 hrs (random day chosen to be 2013-01-15). Can we see some patterns? ... indeed certain polutant spike at certain times of day</p>
+                    <p style="color: rgb(255,255,255);"><strong>PM10</strong> value is monotonically increasing because of a lower densities in values (we only have ~1 or 2 measurements per day). <strong>PM2.5 </strong>is even sparser, thus we cannot analyze it.</p>
+                    <p style="color: rgb(249,249,249);"><strong>CO</strong>&nbsp;and <strong>NO2&nbsp;</strong>values peak early in the morning , &nbsp;<strong>O3 </strong>peaks around 10PM and <strong>SO2</strong>&nbsp;during launch</p>
+                    <figure class="figure"><img class="img-fluid figure-img" src="assets/img/24hrs-ch.png"></figure>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
+                    <p style="color: rgb(255,255,255);background-color: rgb(239,109,81);">Indeed we can not draw a conclusion over the the variation pattern by only looking at a certain day, so let's extend this by looking at a 96hours variation. Each day is rendered in a separate color.</p>
                     <figure class="figure"><img class="img-fluid figure-img" src="assets/img/96hrs-ch.png">
                         <figcaption class="figure-caption">Caption</figcaption>
                     </figure>
