@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/Bold-BS4-CSS-Image-Slider.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
 </head>
 
@@ -210,7 +211,6 @@
             <div class="row">
                 <div class="col offset-lg-8 mx-auto text-center">
                     <h2 class="text-white section-heading">Are we going for the worst ?</h2>
-                    <hr class="light my-4">
                 </div>
             </div>
         </div>
@@ -240,11 +240,57 @@
     <section id="pollutantsDescriptionTitle" class="bg-primary">
         <div class="container" style="padding: 0px;">
             <div class="row">
+                <div class="col">
+                    <p style="color: rgb(247,247,247);">Our dataset contains entries between 2013 and 2019. Switzerland 2014 data was missing so in the end we choose to analyze the years <em>2013, 2015, 2016, 2017, 2018.</em></p>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col offset-lg-8 mx-auto text-center">
-                    <h2 class="text-white section-heading">to do</h2>
-                    <hr class="light my-4">
+                    <div class="accordian">
+                        <ul>
+                            <li><a href="#" class="image_title" style="background-color: rgba(0,0,0,0.6);">2016 is a year with a bump in CO values, but the values remain stagnant during the years we analyzed</a><a href="#"><img src="assets/img/5years_avgs_co.png" style="width: 650px;height: 320px;"></a></li>
+                            <li><a href="#" class="image_title" style="background-color: rgba(0,0,0,0.6);">We can observe a slight decrease in NO2 values</a><a href="#"><img src="assets/img/5years_avgs_no2.png" style="width: 650px;height: 320px;"></a></li>
+                            <li><a href="#" class="image_title" style="background-color: rgba(0,0,0,0.6);">Ozone values fallow a shallow increasing trend</a><a href="#"><img src="assets/img/5years_avgs_o3.png" style="width: 650px;height: 320px;"></a></li>
+                            <li><a href="#" class="image_title" style="background-color: rgba(0,0,0,0.6);">2013 seems to be the year in which PM10 has had the larguest values. Other than that no further conclusions can be made</a><a href="#"><img src="assets/img/5years_avgs_pm10.png" style="width: 650px;height: 320px;"></a></li>
+                            <li><a href="#" class="image_title" style="background-color: rgba(0,0,0,0.6);">No certain trends can be found in the variation of SO2</a><a href="#"><img src="assets/img/5years_avgs_so2.png" style="width: 650px;height: 320px;"></a></li>
+                        </ul>
+                    </div>
                     <p class="text-faded mb-4"></p>
                 </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p style="color: rgb(255,255,255);">Before drawing any final conclusions, let's look at the above data in a different way</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col offset-lg-8 mx-auto text-center">
+                    <div class="accordian">
+                        <ul>
+                            <li><a href="#"><img src="assets/img/5years_co.png" style="width: 640px;height: 320px;"></a></li>
+                            <li><a href="#"><img src="assets/img/5years_no2.png" style="width: 650px;height: 320px;"></a></li>
+                            <li><a href="#"><img src="assets/img/5years_o3.png" style="width: 650px;height: 320px;"></a></li>
+                            <li><a href="#"><img src="assets/img/5years_pm10.png" style="width: 650px;height: 320px;"></a></li>
+                            <li><a href="#"><img src="assets/img/5years_so2.png" style="width: 650px;height: 320px;"></a></li>
+                        </ul>
+                    </div>
+                    <p class="text-faded mb-4"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p style="color: rgb(255,255,255);">Besides NO2 values which slowly trends downards, during a period of 6 years we cannot conclude that there is a specific decreasing or increasing trends in pollutants values. It is certainly a<strong> positive</strong> aspect that these
+                        pollutants stay more or less at the same levels in Switzerland (levels which are considered <strong>healthy</strong>), that shows us that we are definitely in a good spot regarding pollution and we are able to keep this performance
+                        throught the years.</p>
+                    <p style="color: rgb(238,238,238);font-size: 14px;">Future work we considered: digging for historical data (over 10 / 20 / 30 years) that could show a bigger picture</p>
+                    <hr class="light my-4">
+                    <p style="color: rgb(255,255,255);">The above charts confirmed the fact that pollutant values are affected by the seasons, that's why we can see :</p><ul style="margin-left: 40px;color: rgb(255,255,255);">
+    <li><em>CO</em> values being lower in the summer</li>
+    <li><em>NO2</em> values being lower in the summer</li>
+    <li><em>O3</em> values being higher in the summer (reasone that was stated above)</li>
+    <li><em>PM10</em> being higher during the first few months of the year; pattern validated <u><a class="text-white" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3885864/">here </a> </u> </li>
+    <li><em>SO2 </em>being higher during the first few months of the year (winter); based on people needing to heat their homes</li>
+</ul></div>
             </div>
         </div>
     </section>
