@@ -80,3 +80,7 @@ fabric.properties
 .idea/caches/build_file_checksums.ser
 
 .DS_Store
+
+countried_timestory_data.pkl
+
+countried_data_geostory.pkl
