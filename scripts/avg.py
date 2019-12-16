@@ -44,11 +44,10 @@ df = spark.read.format("com.databricks.spark.csv").option("inferSchema", "true")
 pollutants = ["CO", "NO2", "O3", "SO2", "PM10", "PM2.5"]
 is_valid = (df.Validity > 0) & (df.Verification < 3) & (df.Concentration > 0) & (df.Pollutant.isin(pollutants))
 
-df.where(is_valid).groupBy(["Country", "Pollutant", year("DatetimeBegin").alias("Year"),
-                            month("DatetimeBegin").alias("Month")]) \
+df.where(is_valid).groupBy(["EoICode", "Pollutant", year("DatetimeBegin").alias("Year")]) \
     .agg(avg(when((df.Unit == u"µg/m3") | (df.Unit == "mg/l"), df.Concentration) \
              .when(df.Unit == "mg/m3", df.Concentration * 1000) \
              .when(df.Unit == "ng/m3", df.Concentration / 1000) \
              .otherwise(None)).alias("Avg (µg/m3)")) \
-    .sort(["Country", "Pollutant", "Year", "Month"]) \
+    .sort(["EoICode", "Pollutant", "Year"]) \
     .write.csv('kekz', timestampFormat="yyyy-MM-dd hh:mm:ss")
