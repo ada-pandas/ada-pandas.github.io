@@ -1,5 +1,8 @@
 # Title: How heavily polluted is the Earth’s atmosphere? Air Quality Data Analysis
 
+# Data story
+https://ada-pandas.github.io/WebDataStory/index.html
+
 # Abstract
 By pollution of the Earth's atmosphere, we mean bringing new, uncharacteristic physical, chemical and biological substances into the air or changing their natural concentration. But what is the danger and why is it necessary to fight it? 
 When we get oxygen by breathing in air of poor quality, pollutants enter the larynx and trachea through the nasopharynx. There, our blood takes particles of contaminated oxygen from the air and moves through the vessels and carries oxygen from the lungs to all organs. Thus, these emissions can cause severe health problems such as asthma, cardiovascular diseases and cancer, leading to serious health problems or even death. Therefore, the life expectancy of the population living in the contaminated regions is reduced. Moreover, according to the World Health Organization, approximately 4.2 million people in the world die every year due to air pollution.
@@ -13,14 +16,10 @@ How does the pollution level change over throughout the year and how did it chan
 
 What is the correlation between the pollution level and different external factors (number of cars in cities, geographical position, presence of factories or thermoelectric power stations in the region, etc.)?
 
-What are the common aspects of cities with different pollution levels (cluster analysis)?
-
 # Dataset
 The main dataset lists [AirQuality indexes](http://discomap.eea.europa.eu/map/fme/AirQualityExport.htm) for different European cities throughout the time (2013 - 2019). The granularisation is at the city level, approximatively 1 reading being done per day. The pollutants included are CO, NO, NO2, PB, PM10, PM2.5, SO2, THC ...
 
 Not all cities have data for all the years and all pollutants.
-
-We are going to use one ore more extra datasets that can provide us with different insights about some characteristics of the cities (number of inhabitants, cars ...): [European Cities Dataset](https://www.kaggle.com/roshansharma/europe-datasets)
 
 # A list of internal milestones up until project milestone 2
 
@@ -29,14 +28,11 @@ We are going to use one ore more extra datasets that can provide us with differe
 3. Split the areas we can focus on, start working individually on those [DONE]
 4. Re-group, discuss the results [DONE]
 5. Work on visualizing the results [DONE]
-6. Combine everything into a report (with conclusion ~ what we can do do limit the effects of pollutants & provide a better future) [WORK-IN-PROGRESS]
+6. Combine everything into a report (with conclusion ~ what we can do do limit the effects of pollutants & provide a better future) [DONE]
 
 
 # Milestone 2 aspects
 The dataset that we have chosen is pretty broad as it offers plently of areas to dig in and investigate. 
-
-**Until now he have focused on**:
-The dataset that we have chosen is pretty broad as it offers plenty of areas to dig in and investigate. 
 
 **Until now we have focused on**:
 1. How to get the data; the whole dataset has 250GB, so we needed to put the dataset on the cluster and on our machine to only work with a subset of the data (that can by filter by the country or timestamp)
@@ -61,5 +57,5 @@ Then we took different time intervals and see how pollutants vary through time (
  3. As we are aiming for a data story, our research is headed towards finding specific action points that we as citizens should be aware of into trying to make the world a better place (learn from the mistakes of others / the good policies that other countries have in place to limit certain pollutants levels)
 
 
-# Questions for TAa
-1. We have a .py script that scrapes data from the web (the total size is about 0.3-0.4 TB). Can we run it on the cluster?
+# Contributions
+Anton: Implementing the scraper, data collection, preliminary data analysis, writing spark scripts, creating interactive maps
