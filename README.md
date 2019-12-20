@@ -1,7 +1,7 @@
 # Title: How heavily polluted is the Earth’s atmosphere? Air Quality Data Analysis
 
 # Data story
-https://ada-pandas.github.io/WebDataStory/index.html
+https://ada-pandas.github.io/index.html
 
 # Abstract
 By pollution of the Earth's atmosphere, we mean bringing new, uncharacteristic physical, chemical and biological substances into the air or changing their natural concentration. But what is the danger and why is it necessary to fight it? 
