@@ -59,3 +59,4 @@ Then we took different time intervals and see how pollutants vary through time (
 
 # Contributions
 Anton: Implementing the scraper, data collection, preliminary data analysis, writing spark scripts, creating interactive maps
+Mircea Sorin-Sebastian: Web Datastory (HTML + CSS), Switzerland Analysys, Fire story
